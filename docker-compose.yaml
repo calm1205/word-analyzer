@@ -1,0 +1,11 @@
+services:
+  aspose:
+    image: word-analyzer
+    container_name: word-analyzer
+    build: .
+    platform: linux/amd64
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/app
+    tty: true
