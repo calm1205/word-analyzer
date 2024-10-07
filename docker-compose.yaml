@@ -1,11 +1,26 @@
 services:
   aspose:
-    image: word-analyzer
-    container_name: word-analyzer
-    build: .
+    image: apose
+    container_name: aspose
+    build:
+      context: .
+      dockerfile: dockerfile.aspose
     platform: linux/amd64
     ports:
       - "5000:5000"
+    volumes:
+      - .:/app
+    tty: true
+
+  spire:
+    image: spire
+    container_name: spire
+    build:
+      context: .
+      dockerfile: dockerfile.spire
+    platform: linux/amd64
+    ports:
+      - "5001:5001"
     volumes:
       - .:/app
     tty: true
