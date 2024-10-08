@@ -9,4 +9,4 @@ builder = aw.DocumentBuilder(doc)
 builder.writeln("Hello, World!")
 
 # Save the document in DOCX format. Save format is automatically determined from the file extension.
-doc.save("output.docx")
+doc.save("output/simple.docx")
