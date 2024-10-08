@@ -1,5 +1,7 @@
 import aspose.words as aw
 
+# ref: https://reference.aspose.com/words/python-net/aspose.words.properties/customdocumentproperties/
+
 doc = aw.Document("fixtures/original.docx")
 
 doc.custom_document_properties.add("MNTSQ_boolean", True)

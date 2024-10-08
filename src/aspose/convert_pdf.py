@@ -1,5 +1,7 @@
 import aspose.words as aw
 
+# ref: https://reference.aspose.com/words/python-net/aspose.words/document/save/#str_saveoptions
+
 # for English
 # doc = aw.Document("fixtures/original.eng.docx")
 # doc.save("output/original.pdf", aw.SaveFormat.PDF)

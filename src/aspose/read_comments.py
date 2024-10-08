@@ -1,5 +1,7 @@
 import aspose.words as aw
 
+# ref: https://reference.aspose.com/words/python-net/aspose.words/compositenode/get_child_nodes/#nodetype_bool
+
 doc = aw.Document('fixtures/original_comment.docx')
 comments = doc.get_child_nodes(aw.NodeType.COMMENT, True)
 # If a comment has no ancestor, it is a "top-level" comment as opposed to a reply-type comment.
