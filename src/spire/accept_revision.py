@@ -10,5 +10,5 @@ doc.LoadFromFile("fixtures/original_revision.docx")
 # Accept all revisions
 doc.AcceptChanges()
 
-# Print text
+# Save as New
 doc.SaveToFile("output/accept_revision.docx")
