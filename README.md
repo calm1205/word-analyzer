@@ -2,6 +2,11 @@
 
 Aspose vs Spire
 
+1. Get comments
+2. Update custom properties
+3. Accept revision
+4. Convert to PDF
+
 <br/><br/>
 
 ## To run
