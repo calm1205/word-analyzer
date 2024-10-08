@@ -1,6 +1,6 @@
 import aspose.words as aw
 
-doc = aw.Document('fixtures/' + 'original_comment.docx')
+doc = aw.Document('fixtures/original_comment.docx')
 comments = doc.get_child_nodes(aw.NodeType.COMMENT, True)
 # If a comment has no ancestor, it is a "top-level" comment as opposed to a reply-type comment.
 # Print all top-level comments along with any replies they may have.
