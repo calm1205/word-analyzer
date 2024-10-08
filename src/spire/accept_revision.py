@@ -1,6 +1,8 @@
 from spire.doc import *
 from spire.doc.common import *
- 
+
+# ref: https://www.e-iceblue.com/Tutorials/Python/Spire.Doc-for-Python/Program-Guide/Document-Operation/Python-Enable-Track-Changes-Accept-or-Reject-Tracked-Changes-in-Word.html
+
 # Create a Document object
 doc = Document()
 

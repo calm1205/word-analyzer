@@ -2,7 +2,10 @@ from spire.doc import *
 from spire.doc.common import *
 from pprint import pprint
 import json
- 
+
+# Note: commentsは取得できるが構造化された状態では取得できないかも？
+# ref: https://www.e-iceblue.com/Tutorials/Python/Spire.Doc-for-Python/Program-Guide/Comments/Python-Extract-Comments-from-Word.html
+
 # Create a Document object
 document = Document()
 
