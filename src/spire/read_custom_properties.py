@@ -14,7 +14,6 @@ doc.LoadFromFile("fixtures/original_custom_properties.docx")
 
 # Read custom properties
 for i in range(doc.CustomDocumentProperties.Count):
-    # pprint(doc.CustomDocumentProperties[i].Name)
-    pprint(doc.CustomDocumentProperties[i].Value) # 具体的なオブジェクトが取れない
-
-    # pprint(dir(doc.CustomDocumentProperties[i]))
+    name = doc.CustomDocumentProperties[i].Name
+    value = doc.CustomDocumentProperties.get_Item(name).ToString()
+    pprint({"name": name, "value": value})
