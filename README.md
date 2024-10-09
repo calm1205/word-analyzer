@@ -11,12 +11,15 @@ Aspose vs Spire
 
 ## To run
 
-```
-# e.g. Aspose
+e.g. Aspose
+
+```bash
 $ docker compose up -d aspose
 $ docker compose exec aspose bash
+```
 
-# python3.9 src/aspose/accept_revisions.py
+```bash
+$ python3.9 src/aspose/accept_revisions.py
 ```
 
 <br/><br/>
