@@ -9,10 +9,12 @@ from pprint import pprint
 doc = Document()
 
 # Load a Word file
-doc.LoadFromFile("fixtures/original_custom_properties.doc")
-# doc.LoadFromFile("fixtures/original_custom_properties.docx")
+# doc.LoadFromFile("fixtures/original_custom_properties.doc")
+doc.LoadFromFile("fixtures/original_custom_properties.docx")
 
 # Read custom properties
 for i in range(doc.CustomDocumentProperties.Count):
-    pprint(doc.CustomDocumentProperties[i].Name)
-    pprint(vars(doc.CustomDocumentProperties[i].Value)) # 具体的なオブジェクトが取れない
+    # pprint(doc.CustomDocumentProperties[i].Name)
+    pprint(doc.CustomDocumentProperties[i].Value) # 具体的なオブジェクトが取れない
+
+    # pprint(dir(doc.CustomDocumentProperties[i]))
