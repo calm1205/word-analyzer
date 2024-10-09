@@ -7,9 +7,11 @@ from pprint import pprint
 
 doc = Document()
 
-doc.LoadFromFile("fixtures/original.doc")
-# doc.LoadFromFile("fixtures/original.docx")
+# doc.LoadFromFile("fixtures/original.doc")
+doc.LoadFromFile("fixtures/original.docx")
 
-doc.CustomDocumentProperties.Add("MNTSQ_boolean", "")
+# spire_object = SpireObject(ptr) # SpireObjectは自分でinstance化する必要があるのか
+# value = DocumentProperty(spire_object)
+doc.CustomDocumentProperties.Add("MNTSQ_boolean", value) # to See: packages/spire/doc/CustomDocumentProperties.py
 
 doc.SaveToFile("output/original_custom_properties.docx")
