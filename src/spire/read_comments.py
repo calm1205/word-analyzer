@@ -6,10 +6,20 @@ import json
 # Note: commentsは取得できるが構造化された状態では取得できないかも？
 # ref: https://www.e-iceblue.com/Tutorials/Python/Spire.Doc-for-Python/Program-Guide/Comments/Python-Extract-Comments-from-Word.html
 
+"""
+docだと\x05という制御文字が入る。docxだと入らない。
+[{'author': 'Nagi Moriyama', 'text': '\x05Comment1\n'},
+ {'author': 'Nagi Moriyama', 'text': '\x05Comment2\n'},
+ {'author': 'Nagi Moriyama', 'text': '\x05Comment3\n'},
+ {'author': 'Nagi Moriyama', 'text': '\x05Comment3 return\n'},
+ {'author': 'Nagi Moriyama', 'text': '\x05Comment3 return2\n'}]
+"""
+
 # Create a Document object
 document = Document()
 
 # Load a Word file
+# document.LoadFromFile("fixtures/original_comment.doc")
 document.LoadFromFile("fixtures/original_comment.docx")
 
 # Create a list to store the extracted comment data

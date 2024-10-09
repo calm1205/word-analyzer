@@ -7,10 +7,12 @@ from spire.doc.common import *
 doc = Document()
 
 # Load a Word file
-doc.LoadFromFile("fixtures/original_revision.docx")
+doc.LoadFromFile("fixtures/original_revision.doc")
+# doc.LoadFromFile("fixtures/original_revision.docx")
 
 # Accept all revisions
 doc.AcceptChanges()
 
 # Save as New
-doc.SaveToFile("output/accept_revision.docx")
+doc.SaveToFile("output/accept_revision.doc")
+# doc.SaveToFile("output/accept_revision.docx")

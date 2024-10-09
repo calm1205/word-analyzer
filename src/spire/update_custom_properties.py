@@ -9,7 +9,8 @@ from pprint import pprint
 doc = Document()
 
 # Load a Word file
-doc.LoadFromFile("fixtures/original.docx")
+doc.LoadFromFile("fixtures/original.doc")
+# doc.LoadFromFile("fixtures/original.docx")
 
 # Add custom properties
 doc.CustomDocumentProperties.Add("MNTSQ_boolean", "")

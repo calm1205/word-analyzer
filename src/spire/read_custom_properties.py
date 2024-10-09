@@ -9,7 +9,8 @@ from pprint import pprint
 doc = Document()
 
 # Load a Word file
-doc.LoadFromFile("fixtures/original_custom_properties.docx")
+doc.LoadFromFile("fixtures/original_custom_properties.doc")
+# doc.LoadFromFile("fixtures/original_custom_properties.docx")
 
 # Read custom properties
 for i in range(doc.CustomDocumentProperties.Count):

@@ -8,7 +8,8 @@ document = Document()
 
 # Load a doc or docx file
 # document.LoadFromFile("fixtures/original.docx")
-document.LoadFromFile("fixtures/original.eng.docx") # for English version
+document.LoadFromFile("fixtures/original.eng.doc") # for English version
+# document.LoadFromFile("fixtures/original.eng.docx") # for English version
 
 #Save the document to PDF
 document.SaveToFile("output/original.pdf", FileFormat.PDF)
