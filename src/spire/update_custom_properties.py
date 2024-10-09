@@ -4,6 +4,7 @@ from pprint import pprint
 
 # build-in propertiesはドキュメントが存在するが、custom propertiesはドキュメントなし
 # ref: https://www.e-iceblue.com/Tutorials/Python/Spire.Doc-for-Python/Program-Guide/Document-Operation/Python-Add-Read-and-Remove-Built-in-Document-Properties-in-Word-Documents.html
+# ref: https://www.e-iceblue.com/api_documents/652f3a117501c0-89206493/res/html/CustomDocumentProperties.html
 
 doc = Document()
 
