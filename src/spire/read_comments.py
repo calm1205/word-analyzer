@@ -2,6 +2,7 @@ from spire.doc import *
 from spire.doc.common import *
 from pprint import pprint
 import json
+import time
 
 # Note: commentsは取得できるが構造化された状態では取得できないかも？
 # ref: https://www.e-iceblue.com/Tutorials/Python/Spire.Doc-for-Python/Program-Guide/Comments/Python-Extract-Comments-from-Word.html
@@ -20,11 +21,14 @@ document = Document()
 
 # Load a Word file
 # document.LoadFromFile("fixtures/original_comment.doc")
-document.LoadFromFile("fixtures/original_comment.docx")
+# document.LoadFromFile("fixtures/original_comment.docx")
+document.LoadFromFile("fixtures/original_comment.long.docx")
 
 # Create a list to store the extracted comment data
 comments = []
 
+start_time = time.time()
+print('Start print comment...')
 # Iterate through the comments in the document
 for i in range(document.Comments.Count):
     comment = document.Comments[i]
@@ -47,3 +51,6 @@ for i in range(document.Comments.Count):
 
 # Print text
 pprint(comments)
+
+end_time = time.time()
+print('All comments shown.', end_time - start_time)
